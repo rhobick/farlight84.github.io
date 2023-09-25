@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+:root {
+    --bg1: #151828;
+    --bg2: #181F34;
+    --body: #959DCC;
+    --brand:#FFAB76;
+    --white: #fff;
+
+}
+body{
+    font-family: "Dela Gothic One", 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:"Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body); ;
+    color: white;
+}
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    
+}
+a:hover {
+    color: var(--brand);
+}
+.link-more{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+.link-more .icon{
+    transition: all 0.4s ease;
+}
+.link-more:hover .icon{
+    transform: translateX(8px);
+}
+
+img {
+    width: 100%;
+}
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+}
+/*intro */
+.intro{
+    margin-bottom: 60px;
+}
+.intro h1{
+    margin-top:16x ;
+    margin-bottom: 16px;
+}
+.intro h6{
+    color: var(--brand);
+}
+
+
+
+/*home */
+#home{
+    background: linear-gradient(to right,#181F34, rgba(27, 31, 52, 0.0)), url(images/bg.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+#home p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+/*navbar */
+.navbar{
+    background: linear-gradient(to bottom,#181F34, rgba(27, 31, 52, 0.2))
+
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+
+}
+.navbar-brand{
+    font-family:"Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: var(--brand);
+}
+
+/*btn */
+.btn{
+    padding: 16px 36px;
+    font-family:"Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.4s ease;
+    
+}
+.btn-brand{
+    background-color: var(--brand);
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+
+}
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+
+}
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+}
+#about{
+    position: relative;
+
+}
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index:-1;
+}
+#about h6{
+    color: var(--brand);
+}
+#about h1{
+    margin: top 16px;
+    margin-bottom: 24px;
+}
+
+#heroes{
+    background: var(--bg2);
+}
+#heroes h1{
+    color: var(--brand);
+}
+#heroes .heroe .content{
+    padding: 32px;
+
+}
+#heroes .heroe p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#weapons h1{
+    color: rgb(14, 221, 228);
+
+}
+#weapons h2{
+    color: var(--brand);
+
+}
+/* Reviews*/
+#reviews {
+    background-color: var(--bg2);
+
+
+}
+
+#reviews h2 {
+  color: var(--brand);
+}
+
+.review {
+    padding: 32px;
+    background-color: var(--bg1);
+    position: relative;
+}
+.review img{
+   width: 60px;
+   border-radius: 100px;
+
+}
+.review .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body);
+    color: var(--bg1);
+    border-radius: 150px;
+    position: absolute;
+    right: 32px;
+
+    
+   
+}
+footer .social-links a {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg2);
+    margin-right: 5px;
+}
+footer .social-links a:hover {
+    background-color: var(--brand);
+    color: var(--bg2);
+}
+footer h4 {
+    font-size: medium;
+}
+footer {
+    padding-top: 50px;
+}
+.footer-top{
+    padding-bottom: 30px;
+}
+
+.footer-bottom {
+    padding: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--body);
+}
